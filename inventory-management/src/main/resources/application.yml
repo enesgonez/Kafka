@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://db_user:1234@localhost:27017
+      database: inventory-management
+      authentication-database: admin
+  kafka:
+    consumer:
+      bootstrap-servers: http://localhost:9092
+    topics:
+      - OrderCreateEvent
+      - OrderCancelEvent
+
+server:
+  port: 3434
+  servlet:
+    context-path: /api/inventoryManagement/v1/

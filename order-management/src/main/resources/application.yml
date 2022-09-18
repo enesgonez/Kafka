@@ -1,0 +1,16 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://db_user:1234@localhost:27017
+      database: order-management
+      authentication-database: admin
+  kafka:
+    producer:
+      bootstrap-servers: http://localhost:9092
+    topic:
+      -
+
+server:
+  port: 5252
+  servlet:
+    context-path: /api/orderManagement/v1/
